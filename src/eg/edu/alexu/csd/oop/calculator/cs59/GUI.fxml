@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.chart.BubbleChart?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="eg.edu.alexu.csd.oop.calculator.cs59.Controller"
+      alignment="TOP_CENTER" spacing="10">
+
+    <padding>
+        <Insets top="10" />
+    </padding>
+
+    <HBox alignment="CENTER">
+        <TextField prefWidth="302" prefHeight="80" style="-fx-font-size: 18; -fx-border-color: black;" fx:id="result" onKeyTyped="#keyboard" onAction="#equal"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+
+        <Button text="Save" prefWidth="68" style="-fx-background-color: brown; -fx-cursor: hand;" textFill="white" onAction="#save"/>
+        <Button text="Load" prefWidth="68" style="-fx-background-color: brown; -fx-cursor: hand;" textFill="white" onAction="#load"/>
+        <Button text="current" prefWidth="146" style="-fx-background-color: skyblue; -fx-cursor: hand;" textFill="white" onAction="#current"/>
+
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+
+        <Button text="DEL" prefWidth="68" style="-fx-background-color: springgreen; -fx-cursor: hand;" onAction="#delete"/>
+        <Button text="AC" prefWidth="68" style="-fx-background-color: springgreen; -fx-cursor: hand;" onAction="#AC"/>
+        <Button text="prev" prefWidth="68" style="-fx-background-color: skyblue; -fx-cursor: hand;" textFill="white" onAction="#prev"/>
+        <Button text="next" prefWidth="68" style="-fx-background-color: skyblue; -fx-cursor: hand;" textFill="white" onAction="#next"/>
+
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+
+        <Button text="7" prefWidth="68" prefHeight="50" onAction="#getValue"/>
+        <Button text="8" prefWidth="68" prefHeight="50" onAction="#getValue"/>
+        <Button text="9" prefWidth="68" prefHeight="50" onAction="#getValue"/>
+        <Button text="/" prefWidth="68" prefHeight="50" onAction="#getValue"/>
+
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+
+        <Button text="4" prefWidth="68" prefHeight="50" onAction="#getValue"/>
+        <Button text="5" prefWidth="68" prefHeight="50" onAction="#getValue"/>
+        <Button text="6" prefWidth="68" prefHeight="50" onAction="#getValue"/>
+        <Button text="*" prefWidth="68" prefHeight="50" onAction="#getValue"/>
+
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+
+        <Button text="1" prefWidth="68" prefHeight="50" onAction="#getValue"/>
+        <Button text="2" prefWidth="68" prefHeight="50" onAction="#getValue"/>
+        <Button text="3" prefWidth="68" prefHeight="50" onAction="#getValue"/>
+        <Button text="-" prefWidth="68" prefHeight="50" onAction="#getValue"/>
+
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+
+        <Button text="0" prefWidth="68" prefHeight="50" onAction="#getValue"/>
+        <Button text="." prefWidth="68" prefHeight="50" onAction="#getValue"/>
+        <Button text="=" prefWidth="68" style=" -fx-cursor: hand; -fx-background-radius: 30;" prefHeight="50" textFill="black" onAction="#equal"/>
+        <Button text="+" prefWidth="68" prefHeight="50" onAction="#getValue"/>
+
+    </HBox>
+
+</VBox>
